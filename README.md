@@ -1,4 +1,4 @@
-# Tuxedo RNA-Seq Analysis (Coursera: Command Line Tools for Genomic Data Science)
+### Tuxedo RNA-Seq Analysis (Coursera: Command Line Tools for Genomic Data Science)
 
 Tools:
 - Bowtie2

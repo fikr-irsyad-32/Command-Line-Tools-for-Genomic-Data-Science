@@ -1,0 +1,10 @@
+WORKDIR=/media/sf_v2/gencommand_proj4
+THDIR=/media/sf_v2/gencommand_proj4/Tophat
+ANNOT=/media/sf_v2/gencommand_proj4/athal_genes.gtf
+
+mkdir -p $WORKDIR/Cuffmerge $WORKDIR/Cuffdiff
+
+cuffmerge -g $ANNOT -p 2 -o $WORKDIR/Cuffmerge $WORKDIR/commands/GTFs.txt
+
+cuffdiff -o $WORKDIR/Cuffdiff -p 2 $WORKDIR/Cuffmerge/merged.gtf \
+          $THDIR/Day8/accepted_hits.bam $THDIR/Day16/accepted_hits.bam

@@ -1,0 +1,6 @@
+WORKDIR=/media/sf_v2/gencommand_proj4
+THDIR=/media/sf_v2/gencommand_proj4/Tophat
+
+mkdir -p $WORKDIR/Cufflinks/Day8 $WORKDIR/Cufflinks/Day16
+cd $WORKDIR/Cufflinks/Day8; cufflinks -L Day8 -p 2 $THDIR/Day8/accepted_hits.bam
+cd $WORKDIR/Cufflinks/Day16; cufflinks -L Day16 -p 2 $THDIR/Day16/accepted_hits.bam

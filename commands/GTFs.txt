@@ -1,0 +1,2 @@
+/media/sf_v2/gencommand_proj4/Cufflinks/Day8/transcripts.gtf
+/media/sf_v2/gencommand_proj4/Cufflinks/Day16/transcripts.gtf

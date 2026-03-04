@@ -1,0 +1,17 @@
+mkdir -p athal
+cp athal_chr.fa athal/athal.fa
+bowtie2-build athal/athal.fa athal/athal 
+
+
+WORKDIR=/media/sf_v2/gencommand_proj4
+BWT2IDX=/media/sf_v2/gencommand_proj4/athal/athal
+
+mkdir -p $WORKDIR/Tophat/Day8 $WORKDIR/Tophat/Day16
+
+tophat -o $WORKDIR/Tophat/Day8 \
+       $BWT2IDX \
+       $WORKDIR/Day8.fastq
+       
+tophat -o $WORKDIR/Tophat/Day16 \
+       $BWT2IDX \
+       $WORKDIR/Day16.fastq 

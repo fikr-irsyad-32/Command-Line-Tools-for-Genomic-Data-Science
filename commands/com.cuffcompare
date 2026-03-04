@@ -1,0 +1,8 @@
+WORKDIR=/media/sf_v2/gencommand_proj4
+CFLDIR=/media/sf_v2/gencommand_proj4/Cufflinks
+ANNOT=/media/sf_v2/gencommand_proj4/athal_genes.gtf
+
+mkdir -p $WORKDIR/Cuffcompare/Day8 $WORKDIR/Cuffcompare/Day16
+
+cd $WORKDIR/Cuffcompare/Day8; cuffcompare -r $ANNOT -R -o Day8 $CFLDIR/Day8/transcripts.gtf
+cd $WORKDIR/Cuffcompare/Day16; cuffcompare -r $ANNOT -R -o Day16 $CFLDIR/Day16/transcripts.gtf

@@ -1,2 +1,2 @@
-.Answer linguist-language=Shell
-commands/* linguist-language=Shell
+.Answer linguist-language=Bash
+commands/* linguist-language=Bash
